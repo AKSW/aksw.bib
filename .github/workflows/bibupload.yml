@@ -1,0 +1,26 @@
+name: bibupload
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - aksw.bib
+  pull_request:
+    paths:
+      - aksw.bib
+  workflow_dispatch:
+
+jobs:
+  bibupload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker://docker.io/aksw/bibuploader:18
+        with:
+          args: aksw.bib
+        name: check syntax
+      - uses: docker://docker.io/aksw/bibuploader:18
+        with:
+          args: ${{ secrets.BIB_USER }} ${{ secrets.BIB_PASSWORD }} ${{ vars.BIB_URL }} aksw.bib
+        name: upload to bibsonomy
+        if: github.ref == 'refs/heads/main'
