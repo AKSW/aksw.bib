@@ -619,11 +619,11 @@
 
 @InProceedings{wenige2020kindex,
   author    = {Lisa Wenige and Claus Stadler and Simon Bin and Lorenz Bühmann and Kurt Junghanns and Michael Martin},
-  title     = {Automatic Subject Indexing with Knowledge Graphs},
   booktitle = {LASCAR Workshop at the Extended Semantic Web Conference (ESWC)},
+  title     = {Automatic Subject Indexing with Knowledge Graphs},
   year      = {2020},
   keywords  = {group_aksw wenige stadler sbin buehmann martin sys:relevantFor:infai},
-  url       = {http://lascar.sda.tech/assets/accepted-papers/LASCAR20_paper_2.pdf},
+  url       = {https://svn.aksw.org/papers/2020/LASCAR_Kindex/public.pdf},
 }
 
 @inproceedings{galkin-etal-2020-message,
@@ -12194,23 +12194,18 @@ We developed an evaluation strategy for the format conversion and mapping functi
   url       = {http://svn.aksw.org/papers/2021/databus-client/public.pdf},
 }
 
-@article{WestphalGCBB022,
-  title = {Spatial concept learning and inference on geospatial polygon data},
-  author = {Patrick Westphal and
-    Tobias Grubenmann and
-    Diego Collarana and
-    Simon Bin and
-    Lorenz Bühmann and
-    Jens Lehmann},
-  url = {https://doi.org/10.1016/j.knosys.2022.108233},
-  doi = {10.1016/j.knosys.2022.108233},
-  year = {2022},
-  date = {2022-01-01},
-  journal = {Knowl. Based Syst.},
-  volume = {241},
-  pubstate = {published},
-  tppubtype = {article},
+@Article{WestphalGCBB022,
+  author    = {Patrick Westphal and Tobias Grubenmann and Diego Collarana and Simon Bin and Lorenz Bühmann and Jens Lehmann},
+  journal   = {Knowl. Based Syst.},
+  title     = {Spatial concept learning and inference on geospatial polygon data},
+  year      = {2022},
+  volume    = {241},
+  date      = {2022-01-01},
+  doi       = {10.1016/j.knosys.2022.108233},
   keywords  = {group_aksw westphal sbin buehmann lehmann mole sys:relevantFor:infai},
+  pubstate  = {published},
+  tppubtype = {article},
+  url       = {https://svn.aksw.org/papers/2022/knosys_spatial_concept_learning/public.pdf},
 }
 
 @InProceedings{d2r2-22,
@@ -12271,6 +12266,7 @@ We developed an evaluation strategy for the format conversion and mapping functi
   series    = {{CEUR} Workshop Proceedings},
   volume    = {3401},
   abstract  = {We present an Open Source base platform for the CoyPu knowledge graph project in the resilience domain. We report on our experiences with several tools which are used to create, maintain, serve, view and explore a modular large-scale knowledge graph, as well as the adaptions that were necessary to enable frictionless interaction from both performance and usability perspectives. For this purpose, several adjustments had to be made. We provide a broad view of different programs which are of relevance to this domain. We demonstrate that while it is already possible to achieve good results with free software, there are still several pain points that need to be addressed. Resolution of these issues is often not only a matter of configuration but requires modification of the source code as well.},
+  keywords  = {group_aksw sys:relevantFor:infai es mole sbin stadler radtke junghanns martin},
   url       = {https://ceur-ws.org/Vol-3401/paper6.pdf},
 }
 
@@ -12301,6 +12297,32 @@ We developed an evaluation strategy for the format conversion and mapping functi
   doi      = {https://doi.org/10.1016/j.websem.2021.100662},
   keywords = {group_aksw sys:relevantFor:infai es stadler},
   url      = {https://svn.aksw.org/papers/2023/JWS_LinkedGeoData_Ontop/public.pdf},
+}
+
+@InProceedings{stadler2023-scaling-rml,
+  author    = {Claus Stadler and Lorenz Bühmann and Lars-Peter Meyer and Michael Martin},
+  booktitle = {4th International Workshop on Knowledge Graph Construction @ ESWC 2023},
+  title     = {Scaling RML and SPARQL-based Knowledge Graph Construction with Apache Spark},
+  year      = {2023},
+  address   = {Hersonissos, Greece},
+  series    = {CEUR workshop proceedings},
+  volume    = {3471},
+  abstract  = {Approaches for the construction of knowledge graphs from heterogeneous data sources range from ad-hoc scripts to dedicated mapping languages. Two common foundations are thereby RML and SPARQL. So far, both approaches are treated as different: On the one hand there are tools specifically for processing RML whereas on the other hand there are tools that extend SPARQL in order to incorporate additional data sources. In this work, we first show how this gap can be bridged by translating RML to a sequence of SPARQL CONSTRUCT queries and introduce the necessary SPARQL extensions. In a subsequent step, we employ techniques to optimize SPARQL query workloads as well as individual query execution times in order to obtain an optimized sequence of queries with respect to the order and uniqueness of the generated triples. Finally, we present a corresponding SPARQL query execution engine based on the Apache Spark Big Data framework. In our evaluation on benchmarks we show that our approach is capable of achieving RML mapping execution performance that surpasses the current state of the art.},
+  keywords  = {group_aksw sys:relevantFor:infai es mole stadler buehmann martin},
+  url       = {https://ceur-ws.org/Vol-3471/paper8.pdf},
+}
+
+@InProceedings{stadler2023-kgcw-challenge,
+  author    = {Simon Bin and Claus Stadler and Lorenz Bühmann},
+  booktitle = {4th International Workshop on Knowledge Graph Construction @ ESWC 2023},
+  title     = {{KGCW}2023 Challenge Report {RDF}{P}rocessing{T}oolkit / Sansa},
+  year      = {2023},
+  address   = {Hersonissos, Greece},
+  number    = {3471},
+  series    = {CEUR workshop proceedings},
+  abstract  = {This is the report of our participation in the KGCW2023 Challenge @ ESWC 2023 with our RDFProcessingToolkit/Sansa system which won the “fastest” tool award. The challenge was about the construction of RDF knowledge graphs from RML specifications with varying complexity in regard to the mix of input formats, characteristics of the data and the needed join operations. We detail how we integrated our tool into the provided benchmark framework. Thereby we also report on the issues and shortcomings we encountered as a base for future improvements. Furthermore, we provide an analysis of the data measured with the benchmark framework.},
+  keywords  = {group_aksw sys:relevantFor:infai es mole sbin stadler buehmann},
+  url       = {https://ceur-ws.org/Vol-3471/paper12.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
