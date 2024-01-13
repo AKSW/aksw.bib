@@ -12406,4 +12406,50 @@ We developed an evaluation strategy for the format conversion and mapping functi
   url       = {https://svn.aksw.org/papers/2021/cikm-distrdf2ml/public.pdf},
 }
 
+@InProceedings{Dziwis2022OntoflowUserFriendly,
+  author    = {Gordian Dziwis and Lisa Wenige and Lars-Peter Meyer and Michael Martin},
+  booktitle = {Proceedings of International Workshop on Semantic Industrial Information Modelling (SemIIM) @ ESWC22},
+  title     = {Ontoflow: A User-Friendly Ontology Development Workflow},
+  year      = {2022},
+  keywords  = {group_aksw sys:relevantFor:infai es wenige lpmeyer martin},
+  url       = {https://ceur-ws.org/Vol-3355/ontoflow.pdf},
+}
+
+@InProceedings{Frey2023BenchmarkingAbilitiesLarge,
+  author    = {Frey, Johannes and Meyer, Lars-Peter and Arndt, Natanael and Brei, Felix and Bulert, Kirill},
+  booktitle = {Proceedings of Workshop Deep Learning for Knowledge Graphs (DL4KG) @ ISWC23},
+  title     = {Benchmarking the Abilities of Large Language Models for RDF Knowledge Graph Creation and Comprehension: How Well Do LLMs Speak Turtle?},
+  year      = {2023},
+  abstract  = {Large Language Models (LLMs) are advancing at a rapid pace, with significant improvements at natural language processing and coding tasks. Yet, their ability to work with formal languages representing data, specifically within the realm of knowledge graph engineering, remains under-investigated. To evaluate the proficiency of various LLMs, we created a set of five tasks that probe their ability to parse, understand, analyze, and create knowledge graphs serialized in Turtle syntax. These tasks, each embodying distinct degrees of complexity and being able to scale with the size of the problem, have been integrated into our automated evaluation system, the LLM-KG-Bench. The evaluation encompassed four commercially available LLMs - GPT-3.5, GPT-4, Claude 1.3, and Claude 2.0, as well as two freely accessible offline models, GPT4All Vicuna and GPT4All Falcon 13B. This analysis offers an in-depth understanding of the strengths and shortcomings of LLMs in relation to their application within RDF knowledge graph engineering workflows utilizing Turtle representation. While our findings show that the latest commercial models outperform their forerunners in terms of proficiency with the Turtle language, they also reveal an apparent weakness. These models fall short when it comes to adhering strictly to the output formatting constraints, a crucial requirement in this context.},
+  comment   = {Code: https://github.com/AKSW/LLM-KG-Bench
+Results: https://github.com/AKSW/LLM-KG-Bench-Results/tree/main/2023-DL4KG_Turtle-KG-Eval},
+  doi       = {10.48550/ARXIV.2309.17122},
+  keywords  = {group_aksw sys:relevantFor:infai es frey lpmeyer arndt},
+  url       = {https://ceur-ws.org/Vol-3559/paper-3.pdf},
+}
+
+@InProceedings{Meyer2023DevelopingScalableBenchmark,
+  author    = {Meyer, Lars-Peter and Frey, Johannes and Junghanns, Kurt and Brei, Felix and Bulert, Kirill and Gründer-Fahrer, Sabine and Martin, Michael},
+  booktitle = {Proceedings of Poster Track of Semantics 2023},
+  title     = {Developing a Scalable Benchmark for Assessing Large Language Models in Knowledge Graph Engineering},
+  year      = {2023},
+  abstract  = {As the field of Large Language Models (LLMs) evolves at an accelerated pace, the critical need to assess and monitor their performance emerges. We introduce a benchmarking framework focused on knowledge graph engineering (KGE) accompanied by three challenges addressing syntax and error correction, facts extraction and dataset generation. We show that while being a useful tool, LLMs are yet unfit to assist in knowledge graph generation with zero-shot prompting. Consequently, our LLM-KG-Bench framework provides automatic evaluation and storage of LLM responses as well as statistical data and visualization tools to support tracking of prompt engineering and model performance.},
+  comment   = {Code: https://github.com/AKSW/LLM-KG-Bench
+Results: https://github.com/AKSW/LLM-KG-Bench-Results/blob/main/2023-SEMANTICS_LLM-KGE-Bench-Results},
+  doi       = {10.48550/ARXIV.2308.16622},
+  keywords  = {group_aksw sys:relevantFor:infai es lpmeyer frey junghanns martin},
+}
+
+@Article{Meyer2023LLMassistedKnowledge,
+  author   = {Meyer, Lars-Peter and Stadler, Claus and Frey, Johannes and Radtke, Norman and Junghanns, Kurt and Meissner, Roy and Dziwis, Gordian and Bulert, Kirill and Martin, Michael},
+  title    = {LLM-assisted Knowledge Graph Engineering: Experiments with ChatGPT},
+  year     = {2023},
+  abstract = {Knowledge Graphs (KG) provide us with a structured, flexible, transparent, cross-system, and collaborative way of organizing our knowledge and data across various domains in society and industrial as well as scientific disciplines. KGs surpass any other form of representation in terms of effectiveness. However, Knowledge Graph Engineering (KGE) requires in-depth experiences of graph structures, web technologies, existing models and vocabularies, rule sets, logic, as well as best practices. It also demands a significant amount of work. Considering the advancements in large language models (LLMs) and their interfaces and applications in recent years, we have conducted comprehensive experiments with ChatGPT to explore its potential in supporting KGE. In this paper, we present a selection of these experiments and their results to demonstrate how ChatGPT can assist us in the development and management of KGs.},
+  comment  = {to appear in proceedings of AI Tomorrow 2023
+
+Results: https://github.com/AKSW/AI-Tomorrow-2023-KG-ChatGPT-Experiments},
+  doi      = {10.48550/ARXIV.2307.06917},
+  keywords = {group_aksw sys:relevantFor:infai es lpmeyer stadler frey radtke junghanns meissner martin},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
