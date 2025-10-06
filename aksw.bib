@@ -12682,16 +12682,22 @@ Results: https://github.com/AKSW/LLM-KG-Bench-Results/blob/main/2023-SEMANTICS_L
 }
 
 @InProceedings{Meyer2025LLMKGBench3,
-  author   = {Lars-Peter Meyer and Johannes Frey and Desiree Heim and Felix Brei and Claus Stadler and Kurt Junghanns and Michael Martin},
-  title    = {{LLM-KG-Bench} 3.0: A Compass for SemanticTechnology Capabilities in the Ocean of {LLMs}},
-  year     = {2025},
-  note     = {to appear in ESWC25 Resource Track Proceedings},
-  abstract = {Current Large Language Models (LLMs) can assist developing program code beside many other things, but can they support working with Knowledge Graphs (KGs) as well? Which LLM is offering the best capabilities in the field of Semantic Web and Knowledge Graph Engineering (KGE)? Is this possible to determine without checking many answers manually? The LLM-KG-Bench framework in Version 3.0 is designed to answer these questions. It consists of an extensible set of tasks for automated evaluation of LLM answers and covers different aspects of working with semantic technologies.
+  author    = {Lars-Peter Meyer and Johannes Frey and Desiree Heim and Felix Brei and Claus Stadler and Kurt Junghanns and Michael Martin},
+  booktitle = {The Semantic Web},
+  title     = {{LLM-KG-Bench} 3.0: A Compass for SemanticTechnology Capabilities in the Ocean of {LLMs}},
+  year      = {2025},
+  address   = {Cham},
+  editor    = {Curry, Edward and Acosta, Maribel and Poveda-Villal{\'o}n, Maria and van Erp, Marieke and Ojo, Adegboyega and Hose, Katja and Shimizu, Cogan and Lisena, Pasquale},
+  pages     = {280–296},
+  publisher = {Springer Nature Switzerland},
+  abstract  = {Current Large Language Models (LLMs) can assist developing program code beside many other things, but can they support working with Knowledge Graphs (KGs) as well? Which LLM is offering the best capabilities in the field of Semantic Web and Knowledge Graph Engineering (KGE)? Is this possible to determine without checking many answers manually? The LLM-KG-Bench framework in Version 3.0 is designed to answer these questions. It consists of an extensible set of tasks for automated evaluation of LLM answers and covers different aspects of working with semantic technologies.
 
 In this paper the LLM-KG-Bench framework is presented in Version 3 along with a dataset of prompts, answers and evaluations generated with it and several state-of-the-art LLMs. Significant enhancements have been made to the framework since its initial release, including an updated task API that offers greater flexibility in handling evaluation tasks, revised tasks, and extended support for various open models through the vllm library, among other improvements. A comprehensive dataset has been generated using more than 30 contemporary open and proprietary LLMs, enabling the creation of exemplary model cards that demonstrate the models’ capabilities in working with RDF and SPARQL, as well as comparing their performance on Turtle and JSON-LD RDF serialization tasks.},
-  doi      = {10.48550/arXiv.2505.13098},
-  keywords = {group_aksw sys:relevantFor:infai es lpmeyer frey brei junghanns stadler martin},
-  url      = {https://arxiv.org/abs/2505.13098},
+  doi       = {10.1007/978-3-031-94578-6_16},
+  isbn      = {9783031945786},
+  issn      = {1611-3349},
+  keywords  = {group_aksw sys:relevantFor:infai es lpmeyer frey brei junghanns stadler martin},
+  url       = {http://dx.doi.org/10.1007/978-3-031-94578-6_16},
 }
 
 @Article{Roters2025StahlDigitalOntologyBasedWorkflows,
@@ -12744,15 +12750,19 @@ In this paper the LLM-KG-Bench framework is presented in Version 3 along with a 
 }
 
 @InProceedings{Heim2025HowdoScalingLaws,
-  author   = {Desiree Heim and Lars-Peter Meyer and Markus Schröder and Johannes Frey and Andreas Dengel},
-  title    = {How do Scaling Laws Apply to Knowledge Graph Engineering Tasks? The Impact of Model Size on Large Language Model Performance},
-  year     = {2025},
-  note     = {to appear in the proceedings of workshop ELMKE @ ESWC 2025},
-  abstract = {When using Large Language Models (LLMs) to support Knowledge Graph Engineering (KGE), one of the first indications when searching for an appropriate model is its size. According to the scaling laws, larger models typically show higher capabilities. However, in practice, resource costs are also an important factor and thus it makes sense to consider the ratio between model performance and costs. The LLM-KG-Bench framework enables the comparison of LLMs in the context of KGE tasks and assesses their capabilities of understanding and producing KGs and KG queries. Based on a dataset created in an LLM-KG-Bench run covering 26 open state-of-the-art LLMs, we explore the model size scaling laws specific to KGE tasks. In our analyses, we assess how benchmark scores evolve between different model size categories. Additionally, we inspect how the general score development of single models and families of models correlates to their size.
+  author    = {Desiree Heim and Lars-Peter Meyer and Markus Schröder and Johannes Frey and Andreas Dengel},
+  booktitle = {Joint Proceedings of the ESWC 2025 Workshops and Tutorialsco-located with 22nd Extended Semantic Web Conference (ESWC 2025)},
+  title     = {How do Scaling Laws Apply to Knowledge Graph Engineering Tasks? The Impact of Model Size on Large Language Model Performance},
+  year      = {2025},
+  editor    = {M. Sabou and A. Harth and P. Lisena and E. Curry and B. Zhang and R. Alharbi and Y. He and G. Rehm and S. Schimmler and S. Dietze and N. Manola and A. Cimmino and N. Fornara and V. Rodríguez-Doncel and J. Domingue and A. Rettinger and D. Trilling and M. Grobelnik and C. d'Amato and V. Fionda and I. Tiddi and G. Tolomei},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {3977},
+  abstract  = {When using Large Language Models (LLMs) to support Knowledge Graph Engineering (KGE), one of the first indications when searching for an appropriate model is its size. According to the scaling laws, larger models typically show higher capabilities. However, in practice, resource costs are also an important factor and thus it makes sense to consider the ratio between model performance and costs. The LLM-KG-Bench framework enables the comparison of LLMs in the context of KGE tasks and assesses their capabilities of understanding and producing KGs and KG queries. Based on a dataset created in an LLM-KG-Bench run covering 26 open state-of-the-art LLMs, we explore the model size scaling laws specific to KGE tasks. In our analyses, we assess how benchmark scores evolve between different model size categories. Additionally, we inspect how the general score development of single models and families of models correlates to their size.
 Our analyses revealed that, with a few exceptions, the model size scaling laws generally also apply to the selected KGE tasks. However, in some cases, plateau or ceiling effects occurred, i.e., the task performance did not change much between a model and the next larger model. In these cases, smaller models could be considered to achieve high cost-effectiveness. Regarding models of the same family, sometimes smaller models performed worse than larger models of the same family. These effects occurred only locally. Hence it is advisable to additionally test the next smallest and largest model of the same family.},
-  doi      = {10.48550/ARXIV.2505.16276},
-  keywords = {group_aksw sys:relevantFor:infai es lpmeyer frey},
-  url      = {https://arxiv.org/pdf/2505.16276},
+  doi       = {10.48550/ARXIV.2505.16276},
+  issn      = {1613-0073},
+  keywords  = {group_aksw sys:relevantFor:infai es lpmeyer frey},
+  url       = {https://ceur-ws.org/Vol-3977/elmke-3.pdf},
 }
 
 @Article{arndt-n-2025--webarchiv,
